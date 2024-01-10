@@ -1,0 +1,143 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <title>Admin Page - Movie Score Detector</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        .buttons {
+            text-align: right;
+            padding: 10px;
+        }
+
+        .buttons button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .buttons button i {
+            font-size: 20px;
+        }
+
+        .admin {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .admin-content {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #movieDataDisplay {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Detector</a>
+            <a href="#">About</a>
+            <a href="#">Admin</a>
+        </nav>
+        <div class="buttons">
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+            <button>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="admin">
+        <h1 class="heading">Admin Page</h1>
+        <div class="admin-content">
+            <h2>Manage Movie Data</h2>
+
+            <label for="movieName">Enter Movie Name:</label>
+            <input type="text" id="movieName" placeholder="Movie Name">
+
+            <button onclick="fetchMovieData()" class="btn">Fetch Movie Data</button>
+
+            <div id="movieDataDisplay"></div>
+        </div>
+    </section>
+
+    <script>
+        function fetchMovieData() {
+            var movieNameInput = document.getElementById('movieName');
+            var movieName = movieNameInput.value;
+
+            if (!movieName) {
+                alert("Please enter a movie name.");
+                return;
+            }
+
+            var movieDataDisplay = document.getElementById('movieDataDisplay');
+            movieDataDisplay.innerHTML = "<p>Fetching data for '" + movieName + "'...</p>";
+            // You can add the actual movie data fetching logic here.
+        }
+    </script>
+</body>
+</html>
