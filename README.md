@@ -43,27 +43,30 @@ Detector gets the files and uses them for the main goal
 This section provides additional informations about the system.
 <img src="3.jpg" alt="Görsel 1">
 
-<h3>5. Features</h3>
+<h3>5. Admin Page</h3>
+Unlike the code, you can also download from here by typing the movie name.
+<img src="admin.jpg" alt="Görsel 1">
 
-<h4>5.1 Uploading & Detecting</h4>
+<h3>6. Features</h3>
+<h4>6.1 Uploading & Detecting</h4>
 On the dashboard, navigate to the "Detector" page from the menu or navigation bar. Click the
 "File Selection" button, select the movie file in ".mp4" format, from your computer. This process
 uploads your selection into the system. 
 <img src="6.jpg" alt="Görsel 1">
 
-<h4>5.2 Prediction</h4>
+<h4>6.2 Prediction</h4>
 Upload the movie you chose to the website by clicking the "Upload" or "Download" button. Once
 the installation is complete, review the information provided by the website. There will be
 prediction results, movie score or similar details. You can check, compare or use them.
 <img src="4.jpg" alt="Görsel 1">
 
-<h3>6. Troubleshooting</h3>
+<h3>7. Troubleshooting</h3>
 
-<h4>6.1 Common Issues</h4>
+<h4>7.1 Common Issues</h4>
 Check your internet connection.
 Ensure your system meets the minimum requirements.
 
-<h4>6.2 FAQ/<h4><br>
+<h4>7.2 FAQ/<h4><br>
 - Why my page is not loading?<br>
 + Please check your Internet connection. Make sure that youe device is connected to Internet.
   <br><br>
@@ -77,9 +80,9 @@ sizes.<br><br>
 - Why am I getting my results lately?<br>
 + Processing time may vary depending on the size of the user's file. Please be patient<br><br>
 
-<h3>7. Technical Support<h3>
+<h3>8. Technical Support<h3>
 
-<h4>7.1 Contact Informations</h4>
+<h4>8.1 Contact Informations</h4>
 You can get in touch with our development team via e-mail or something else.
-<h4>7.2 Community</h4>
+<h4>8.2 Community</h4>
 Join our community to connect & get in touch with other users
