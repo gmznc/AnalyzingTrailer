@@ -124,7 +124,7 @@ def run_another_script():
 
             
             new_data = {'name': search_keyword, 'rate': df.iloc[i,1], 'image': array_frame, 'sound': grafik}
-            data = data.append(new_data, ignore_index=True)
+            data = pd.concat([data, pd.DataFrame([new_data])], ignore_index=True)
 
         data['image'] = data['image'].apply(lambda arr_list: np.concatenate(arr_list).flatten())
         data['sound'] = data['sound'].apply(lambda arr_list: [arr.flatten().tolist() for arr in arr_list])
